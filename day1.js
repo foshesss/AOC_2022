@@ -2,7 +2,6 @@ const fs = require("fs");
 const FILE_NAME = "textFiles/day1.txt";
 
 fs.readFile(FILE_NAME, 'utf8', function(_, data){
-
     const calories = data.split('\n');
     const elves = [0];
     let currentElf = 0;
@@ -31,6 +30,5 @@ fs.readFile(FILE_NAME, 'utf8', function(_, data){
     for (let i = 0; i <= 2; i++) {
         maxCalories += Number(sortedCalories[i])
     }
-
     console.log(maxCalories)
 });
