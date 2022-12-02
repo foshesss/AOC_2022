@@ -67,7 +67,6 @@ fs.readFile(FILE_NAME, 'utf8', function(_, data){
     data = data.split('\n');
     const games = data.map(e => e.split(" "));
     
-
     // part1
     part1(games)
 
