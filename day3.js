@@ -78,7 +78,6 @@ const part2 = (data) => {
 fs.readFile(FILE_NAME, 'utf8', function(_, data){
     data = data.split('\n');
 
-
-    // part1(data);
-   part2(data);
+    part1(data);
+    part2(data);
 });
