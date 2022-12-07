@@ -45,7 +45,9 @@ const part2 = (directory, directories) => {
             smallestDir = directories[i];
         }
     }
+    
     delete smallestDir.__prev[smallestDir.__name];
+
     return smallest;
 }
 
